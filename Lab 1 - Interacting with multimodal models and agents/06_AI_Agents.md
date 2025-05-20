@@ -17,7 +17,8 @@ Agents can also access multiple tools in parallel, if needed. Some of these tool
 - **Code Interpreter**
 - **File Search**
 - **Grounding with Bing Search**
-- **Azure Functions** and more..
+- **Azure Functions** 
+... and more..
 
 In this section, we will be covering Code Interpreter.
 
@@ -40,7 +41,9 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
 First thing first, download the data we are going to use to ground your agent's responses from [here](https://github.com/microsoft/aitour-interact-with-llms/tree/main/lab/Skillable%20Workshop%20Instructions/assets).
 
 Next, follow the steps below to create an customize your agent.
-1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
+1. Under _Build and customize_ on the left navigation bar, select **Agents.**
+
+1. If this is your first time trying the Agents playground, a page titled "Select or Deploy a model" will appear. Click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
 
 ![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
 
@@ -70,15 +73,16 @@ Next, follow the steps below to create an customize your agent.
     >[!NOTE]
     >How many prompt engineering techniques from the previous sections are you able to identify in this prompt? For clues, check Part 2 of the workshop.
 
-5. Navigate to the **Actions** tab, and click **add.** 
+1. Scroll down to the **Actions** section, and click **Add**.
 
     ![Agent attach new file](Images/agents-actions.jpeg)
 
-6. A new tab where you will select **Code interpreter**.
+1. In the new tab that appears, click **Code interpreter**.
 
-7. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
+1. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
     ![Agents code interpreter](Images/aifoundry-codeinterpreter-upload-file.jpeg)
-8. Click on the **upload and add** button. You should now see the file under the *Code Interpreter* tool.
+
+1. Click on the **Upload and save** button. You should now see the file under the *Code Interpreter* tool.
 
 The Agent is now ready for us to interact with it.
 

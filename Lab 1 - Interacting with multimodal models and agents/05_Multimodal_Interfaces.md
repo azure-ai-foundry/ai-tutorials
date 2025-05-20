@@ -6,6 +6,7 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 > [!TIP]
 > **GPT-4o mini** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
+> [!TIP]
 > **GPT-4o realtime** supports low-latency, "speech-in, speech-out" conversational interactions. It is a great fit for use cases involving live interactions between a user and a model, such as customer support agents, voice assistants, and real-time translators.
 
 ## Best Practices
@@ -31,12 +32,16 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 >[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
 
-2. In the chat text box, click on the attachment icon to upload a local image.
+1. Ensure **gpt-4o-mini** is selected as the model in the **Deployment** pane.
+
+1. In the chat text box, click on the attachment icon to upload a local image.
 
 ![Uploading image as input](./Images/upload_image_icon.png)
 
-3. Select all the images from the ```house-multimodal``` folder on your desktop.
-4. Once you have uploaded the files, try these prompts to start interacting with the image:
+1. Upload all the images from the ```house-multimodal``` folder on your desktop, by selecting one by one.
+
+1. Once you have uploaded the files, try these prompts to start interacting with the image:
+
 
 ```
 Create a tagline and short description for this rental home advertisement.
@@ -69,9 +74,9 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 
 By integrating the **gpt-4o-min-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
 
-1. Navigate back to **Playgrounds** and select **try Audio playground** and set the deployment to **gpt-4o-min-realtime-preview**
+1. Navigate back to **Playgrounds** and select **Try the Audio playground** and set the deployment to **gpt-4o-mini-realtime-preview**
 
-2. Update the **model instructions box** with the following:
+2. Update the **model instructions box** with the following, and then click **Apply changes**.
 
     ```You are a pirate, and every response must be full of pirate lingo. ```
 
@@ -79,7 +84,7 @@ By integrating the **gpt-4o-min-realtime-preview** model, users can interact wit
 
 ![enable audio in AI Foundry](./Images/aifoundry-enable-audio.jpeg)
 
-4. Interact with the model by clicking on the **start listening** button, saying ``hello`` and ask the model a few facts.
+4. Interact with the model by clicking on the **start listening** button. Say "hello" to begin, and then ask the model a few questions. Click "Stop Listening" when you're done.
 
 5. Next, change the tone with the system message as follows and interact with the model again: 
 
