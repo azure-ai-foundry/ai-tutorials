@@ -75,7 +75,8 @@ You will notice the navigation bar has updated with new tabs, which represent fu
 We have two new sections:
 1.  The first section includes _Overview_ which provides a general overview of your project, _Model Catalog_ which showcases the available models inside Azure AI Foundry, _Playgrounds_ to interact with the models, and _AI Services_ where you can see a list of Azure AI Services available along with demos, use cases and more.
 1. **Build and Customize**: This includes useful opportunities to expand your project's reach, such as _working in Code_ by running a cloud compute, creating executable flows that link LLMs, prompts, and Python tools with _Prompt Flow_, and the ability to carry out _Fine Tuning_ on your deployments.
-1. **Assess and Improve:** this includes _Evaluation_ processes for your applications, _Tracing_ to debug your flows and _content filters_ to add guardrails to prompt inputs and completion outputs.
+1. **Observe and Improve:** this includes _Evaluation_ processes for your applications, _Tracing_ to debug your flows and _content filters_ to add guardrails to prompt inputs and completion outputs.
+1. **Protect and govern**: This includes _Evaluation_ processes for your applications, _content filters_ to add guardrails to prompt inputs and completion outputs and _governance_ facilities to ensure compliance with your organization policies.
 1. **My assets**: Here you can add additional elements to the project, with resources such as _Data_, _Indexes_, _Models and endpoints_ and _Web apps_ to be used as part of your work.
 1. **Management Center:** a location to manage all you  hub and project details and resources.
 
@@ -103,17 +104,17 @@ Download the data on your machine from [this folder](https://github.com/microsof
         ![Add connection](./Images/ai-foundry-add-connection.png)
 - Back to the previous window, the **Select Azure AI Search service** dropdown menu has been populated with the new connection. Select it and then click **Next**.
         ![Confirm Search Service](./Images/aifoundry-confirm-search-service.png)
-   - In the **Search Settings** section, leave default configurations. Then confirm by clicking on **Create vector index**.
+   - In the **Search Settings** section, leave default configurations. Confirm by clicking on **Next**, and then click **Create vector index**.
 
 ## Playgrounds
 
-You will notice we have different options for our **Playground**. Each option represents a different approach to interacting and using AI models, which can be tailored to our specific needs.
+Click on **Playgrounds** in the left navigation. You will notice we have different options for our **Playground**. Each option represents a different approach to interacting and using AI models, which can be tailored to our specific needs.
 
 We will be doing most of our work in these Playgrounds, but namely in the following:
 
 1. **Chat Playground**
 1. **Images Playground**
-1. **Real-time audio playground**
+1. **Audio playground**
 1. **Agents playground**
 
 ![Image of Azure AI Foundry Playgrounds](./Images/aifoundry-playgrounds.png)
@@ -128,12 +129,12 @@ Within the playground section, navigate to the **Chat playground** and select **
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
 1. **Add your data**: Azure AI Foundry portal supports providing the deployed models with external data, allowing for better search and context.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature.
-1. **Chat Box**: The chat box is where we will see our interactions with the model in the form of chat messages.
-1. **Prompt Box**: This is where we type the prompts we want to send to the model.
+1. **Chat history**: The chat box is where we will see our interactions with the model in the form of chat messages.
+1. **Prompt Box**: This is where we type the user queries ("prompts") we want to send to the model.
 
 ### Images Playground
 
-Navigate back to Playgrounds, select the **Image playground** and click **Try the Image Playground.** This option allows you to work with image generation
+Navigate back to Playgrounds, select the **Images playground** and click **Try the Image Playground.** This option allows you to work with image generation
 
 ![Image of Azure AI Foundry Playground Images Mode](./Images/aifoundry-image-playground.jpg)
 
@@ -154,12 +155,14 @@ Navigate back to Playgrounds, then select the **Audio playground** and click **T
 1. **Parameters**: This tab contains the models detailed settings, such as temperature and max response.
 1. **Prompt Button**: Similar to the chat playground's box, this is where the models get their input from the user. 
 
-> !NOTE
+> NOTE:
 > You need to click on **Enable microphone** to be able to use real-time audio as chat input.
 
 ## Agents playground
 
-In the Navigation bar, select **Agents**. This feature provides you with the tools to build, test, and customize AI-driven agents.
+In the Navigation bar, select **Agents**. Select the dropdown under **Select an Azure OpenAI resource** and choose the Hub resource provided for you. Then click "Let's go".
+
+This feature provides you with the tools to build, test, and customize AI-driven agents.
 
 ![Image of Azure AI Foundry Playground Agents Mode](./Images/agents-playground-pt1.jpeg)
 
@@ -178,6 +181,8 @@ Once you _create your first Agent_ you will see the UI components as follows:
 ## Ready to start
 
 That covers the necessary setup and basics of Azure AI Foundry. We will now move forward to begin interacting with the models.
+
+
 
 > [!IMPORTANT]
 > Go back to the **Chat Playground** and move to [Part 1: Text Generation](./02_Text_Generation.md)
